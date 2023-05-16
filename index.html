@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/x-icon" href="https://openlayers.org/favicon.ico" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <title>Etude artificialisation des sols</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-web navbar-expand-sm fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="image/cham_logo.png" alt="logo" style="width:100px;">
+      </a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="index.html" role="button" data-bs-toggle="dropdown">Accueil</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item active" href="index.html">Contexte de l'étude</a></li>
+              <li><a class="dropdown-item" href="equipe.html">Équipe</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="map.html">Occupation du sol</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="population.html">Population</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="synthese.html">Synthèse</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <h1><strong>L'artificialisation des sols en France et l'augmentation de la population entre 1990 et 2018</strong>
+    </h1>
+    <div class="row">
+      <div class="col-md-6">
+        <h4><u>Étude de cas du département de la Haute-Savoie et de la commune de Chamonix-Mont-Blanc</u> </h4>
+        <p class="etude"> L'objectif de cette étude est de vérifier l'hypothèse selon laquelle l'artificialisation du
+          sol
+          serait 4 fois plus rapide que l'accroissement de la population.
+          Pour cela, l'étude a été réalisée sur le département de la Haute-Savoie avec un zoom sur la commune de
+          Chamonix-Mont-Blanc entre les années 1990 et 2018.
+          Pour répondre à cette problématique, l'étude s'est concentrée sur deux échelles : départemantale et communale.
+          L'intérêt d'effectuer un zoom vers une plus grande échelle est d'observer si le phénomène s'applique à toutes
+          les échelles.
+        </p>
+      </div>
+      <div class="col-md-6">
+        <h4> <u>Qu'est-ce que l'artificialisation des sols en France ?</u> </h4>
+        <p class="artif">
+          L'artificialisation des sols est un processus par lequel les terres naturelles sont transformées en sols
+          artificiels,
+          généralement pour des activités humaines telles que la construction, l'agriculture ou les infrastructures.
+          Ce phénomène est un enjeu majeur pour l'environnement car il entraîne une perte de biodiversité, une
+          fragmentation des habitats naturels, une diminution de la qualité des sols et une augmentation des risques
+          d'inondations.
+          Selon un rapport du Commissariat général au développement durable, la France a perdu environ 590 000 hectares
+          de
+          terres naturelles entre 2006 et 2015, soit l'équivalent d'un département entier tous les 7 ans.
+          Ce phénomène est appelé à ralentir grâce à la mise en place de politiques publiques visant à limiter
+          l'artificialisation des sols.
+        </p>
+      </div>
+      
+        <figure>
+          <div class="text-center">
+          <img class="mapsituation" src="image/map_hteSavoie.png" alt="Carte de la Hte Savoie">
+          <figcaption>Zone d'étude choisie : le département de la Haute-Savoie et la commune de Chamonix-Mont-Blanc
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <footer class="footer fixed-bottom">
+      <img src="image/uga.png" alt="logo" class="uga">
+
+      <div class="container-fluid ctn-foot text-center">
+        <p class="copyright">
+          &copy; Copyright
+          WebMapping | GEOMAS Université Grenoble Alpes 2022-2023<br>
+          Valentine Sollier & Samantha Sciangula
+        </p>
+      </div>
+    </footer>
+  </div>
+
+  <script type="module" src="main.js"></script>
+  <script type="module" src="popHteSavoie.js"></script>
+  <script type="module" src="popCham.js"></script>
+  <script type="module" src="barChartSynt.js"></script>
+
+</body>
+
+</html>

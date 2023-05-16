@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/x-icon" href="https://openlayers.org/favicon.ico" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <title>Population</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-web navbar-expand-sm fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="image/cham_logo.png" alt="logo" style="width:100px;">
+      </a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="index.html" role="button" data-bs-toggle="dropdown">Accueil</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="index.html">Contexte de l'étude</a></li>
+              <li><a class="dropdown-item" href="equipe.html">Équipe</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="map.html">Occupation du sol</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="population.html">Population</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="synthese.html">Synthèse</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="text-center">
+      <h1><strong>L'accroissement de la population en Haute-Savoie</strong></h1>
+      <div class="row">
+        <div class="col-md-6">
+          <h4><u>Population en Haute-Savoie entre 1990 et 2018</u></h4>
+          <p class="hteSavoie">
+            Le département de la <strong>Haute-Savoie</strong> se situe à la frontière suisse, sur les bords du lac
+            Léman.
+            Selon les données de l'<i>INSEE</i>,
+            la population de la Haute-Savoie a augmenté de façon significative entre 1990 et 2018, passant de <u>568 286 
+            habitants à 826 094 habitants</u>.
+            Cette croissance est en grande partie due à l'urbanisation de la région, qui est devenue de plus en plus
+            attractive en raison de son environnement naturel préservé et de ses opportunités économiques.
+            Selon une étude de la <i>Chambre de Commerce et d'Industrie de la Haute-Savoie</i>, le dynamisme économique
+            de
+            la région a entraîné une forte croissance démographique dans les zones urbaines,
+            telles que Annecy et Annemasse, où se concentrent les activités économiques les plus importantes. Cette
+            croissance démographique a également entraîné une augmentation de la demande de logements,
+            conduisant à une augmentation de la construction de logements dans la région.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <h4><u>Population à Chamonix-Mont-Blanc entre 1990 et 2018</u></h4>
+          <p class="Cham">
+            <strong>Chamonix-Mont-Blanc</strong>, commune française, située dans le département de la Haute-Savoie, a
+            connu une augmentation significative entre 1990 et 2018, passant de <u>9 701 habitants à 8 640 habitants</u>,
+            selon l'<i>INSEE</i>.
+            Cette diminution de la population est en partie liée à la diminution du nombre de résidences principales dans
+            la commune.
+            En effet, selon une étude réalisée par <i>l'Observatoire de l'Habitat de la Haute-Savoie</i>, le nombre de
+            résidences principales a diminué de <strong>12%</strong> entre 1999 et 2017,
+            alors que le nombre de résidences secondaires a augmenté de <strong>44%</strong> sur la même période. Cette
+            évolution est en grande partie due à la popularité de la commune en tant que destination touristique de
+            renommée mondiale,
+            qui attire de nombreux visiteurs tout au long de l'année. Cette forte concentration de résidences secondaires
+            peut poser des défis pour la gestion de la commune, notamment en termes de services publics et de
+            développement économique.
+            La commune travaille donc à trouver un équilibre entre l'activité touristique et la qualité de vie de ses
+            résidents permanents.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <canvas id="popHteSavoie"></canvas>
+      <script type="module" src="popHteSavoie.js"></script>
+      <canvas id="popCham"></canvas>
+      <script type="module" src="popCham.js"></script>
+ 
+    </div>
+
+  </div>
+  <footer class="footer">
+    <img src="image/uga.png" alt="logo" class="uga">
+
+    <div class="container-fluid ctn-foot text-center">
+      <p class="copyright">
+        &copy; Copyright
+        WebMapping | GEOMAS Université Grenoble Alpes 2022-2023<br>
+        Valentine Sollier & Samantha Sciangula
+      </p>
+    </div>
+  </footer>
+
+
+  <script type="module" src="main.js"></script>
+  <script type="module" src="popHteSavoie.js"></script>
+  <script type="module" src="popCham.js"></script>
+  <script type="module" src="barChartSynt.js"></script>
+
+</body>
+
+</html>
